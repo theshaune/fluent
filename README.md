@@ -8,7 +8,7 @@ FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless.
 
 I have used, played with, studied, loved, hated & found inspiration, from using the following repos. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
 
-* Bem
+* [BEM](https://en.bem.info/method/)
 * [Bootstrap](http://getbootstrap.com)
 * [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 * [Foundation](http://http://foundation.zurb.com)
