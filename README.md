@@ -4,9 +4,9 @@
 1. able to express oneself easily and articulately.
 
 ## Introduction
-FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. The Following documentation is a result of my experience with CSS and trying alot of frameworks, naming-conventions, I have found that this methodology **currently works best for me**. I know it will not suit everyone and it is not intended to be a perfect solution.
+FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. The Following documentation is a result of my experience with CSS and trying alot of frameworks, naming-conventions, I have found that this methodology **currently works best for me**.
 
-I have used, played with, studied, loved, hated & found inspiration, from using the following repos. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
+I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
 
 * [BEM](https://en.bem.info/method/)
 * [Bootstrap](http://getbootstrap.com)
