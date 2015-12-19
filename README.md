@@ -1,6 +1,7 @@
-# Fluent { css }
-*adjective*
+# FluentCSS
 
+## Fluent
+*adjective*
 1. able to express oneself easily and articulately.
 
 ## Introduction
