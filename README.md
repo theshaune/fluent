@@ -15,6 +15,10 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 * [Foundation](http://http://foundation.zurb.com)
 * ITCSS
 
+## The Purpose of this document
+To create a consistent unified approach to CSS development.
+
+
 ## 1. File Structure
 The files must be imported in the correct order to maintain the correct inheritance of styles.
 All files should be imported in a single .scss file, this will be the **only** file in your application that does not begin with _.
