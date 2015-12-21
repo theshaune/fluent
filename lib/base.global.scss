@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Global theme styles
+
+   Elements;
+    body, html
+    ol, ul
+    h1, h2, h3, h4, h5, h6,
+    p
+    a
+    blockqoute
+    hr
+    img
+    pre
+    code
+
+   ========================================================================== */
+
+html, body { min-height: 100%; }
+
+html { 
+  position: relative; 
+  font-size: 100%;
+}
+
+body {
+  color:       var($color, base);
+  font-family: var($typography, base font-family);
+  font-size:   var($typography, base font-size);
+  font-weight: var($typography, base font-weight);
+  line-height: var($typography, base line-height);
+  // padding: 1rem;
+  height: 100%;
+  max-height: 100%;
+}
+
+ol, ul { padding-left: 2.5rem; }
+ol ol, ul ul,
+ul ol, ol ul { margin: 0 0 0.4em 0; padding-left: 2em; }
+
+h1, h2, h3, h4, h5, h6 {
+  color:       var($typography, header color);
+  font-family: var($typography, header font-family);
+  font-size:   var($typography, header font-size);
+  font-weight: var($typography, header font-weight);
+  line-height: var($typography, header line-height);
+  margin: 0;
+}
+h1 { font-size: var($typography, h1 font-size); }
+h2 { font-size: var($typography, h2 font-size); }
+h3 { font-size: var($typography, h3 font-size); }
+h4 { font-size: var($typography, h4 font-size); }
+h5 { font-size: var($typography, h5 font-size); }
+h6 { font-size: var($typography, h6 font-size); }
+
+p { margin-top: 0.0rem; margin-bottom: 1.5rem }
+
+a { 
+  color: var($color, base); 
+  text-decoration: none; transition: color 0.5s ease; 
+  &:hover { transition: color 0.5s ease; }
+}
+a:hover { color: #3495d1; }
+a:hover,
+a:focus,
+a:active { outline: 0; }
+
+blockquote {}
+
+hr {
+  border: 0;
+  border-top: #EFEFEF 1px solid;
+  display: block;
+  height: 1px;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+img { max-width: 100% }
+
+pre { margin-left: -1rem; margin-right: -1rem; }
+code { padding: 0.25em; background: var($color, code); }
