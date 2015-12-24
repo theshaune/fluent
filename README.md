@@ -2,6 +2,7 @@
 
 **Fluent**
 *adjective*
+
 1. able to express oneself easily and articulately.
 
 ## Introduction
@@ -13,7 +14,7 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 * [Bootstrap](http://getbootstrap.com)
 * [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 * [Foundation](http://http://foundation.zurb.com)
-* ITCSS
+* [ITCSS](http://itcss.io/)
 
 ## The Purpose of this document
 To create a consistent unified approach to CSS development.
