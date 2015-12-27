@@ -8,6 +8,8 @@
 ## Introduction
 FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. The Following documentation is a result of my experience with CSS and trying alot of frameworks, naming-conventions, I have found that this methodology **currently works best for me**.
 
+The pre-processor I will be using in this repository is SASS, I found Stylus & [Sass](http://sass-lang.com/) to be the most natural for me.
+
 I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
 
 * [BEM](https://en.bem.info/method/)
@@ -15,6 +17,7 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 * [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 * [Foundation](http://http://foundation.zurb.com)
 * [ITCSS](http://itcss.io/)
+
 
 ## The Purpose of this document
 To create a consistent unified approach to CSS development.
