@@ -1,0 +1,18 @@
+/* =====================================================
+    Module;
+     .ui-ellipsis
+
+    Notes;
+     - Truncate String …
+     - Single line only.
+
+    Reading Material: 
+     - http://html5hub.com/ellipse-my-text/
+   ===================================================== */
+
+.ui-ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
