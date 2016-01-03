@@ -1,0 +1,25 @@
+/* ==========================================================================
+   breadcrumbs
+
+   Reference: 
+    http://-
+  
+   Elements
+     .component.breadcrumbs
+   ========================================================================== */
+
+.component.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    + li:before {
+      content: ">";
+      padding: 0 5px;
+    }
+  }
+  .active {
+    pointer-events: none;
+  }
+}
