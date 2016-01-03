@@ -1,0 +1,21 @@
+/* ==========================================================================
+  
+  The files must be imported in the correct order.
+  Styles will be inherited and overwrite styles.
+ 
+  Inheritance;
+   1. functions.x
+   2. base.x
+   3. ui.x
+   4. site
+   5. component(s)
+   6. utilities
+
+   ========================================================================== */
+@charset "UTF-8";
+
+
+// 1. init.x.x
+@import 'init.variables.default'; //fluentcss variables
+@import 'init.function.var';
+@import 'init.mixin.clearfix';
