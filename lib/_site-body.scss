@@ -1,0 +1,24 @@
+/* ==========================================================================
+   site.body.css
+
+   Reference: 
+    http://-
+  
+   Elements
+     .site-body-wrap
+     .site-body-container
+     .site-body-content
+   ========================================================================== */
+
+.site {}
+.site-body-wrap {
+  margin: 0 auto;
+  position: relative;
+  &.-tight { max-width: var($site, wrap max-width) }
+  &.-loose { max-width: var($site, wrap max-width) }
+}
+.site-body-container {
+  &.-tight {}
+  &.-loose {}
+}
+.site-body-content {}
