@@ -1,6 +1,4 @@
-# Breadcrumbs
-
-## Html usage Example
+Breadcrumbs navigation trail.
 
 ```html
   <nav class="component breadcrumbs">
