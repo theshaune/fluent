@@ -29,6 +29,18 @@ All files should be imported in a single .scss file, this will be the **only** f
 
 **Note:** Consider trialing the use of folders intead of dot seperated files, a project currently being worked on is beginning to get tough to find the files in the current format.
 
+<pre>
+.
+├── init.scss
+├── base
+│   ├── function.scss
+│   ├── variables.scss
+│   ├── normalize.scss
+│   ├── global.scss
+├── components
+│   ├── *.scss
+</pre>
+
 <pre>init.scss</pre>
 
 <pre>
