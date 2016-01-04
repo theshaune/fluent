@@ -20,7 +20,7 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 
 
 ## The Purpose of this document
-To create a consistent unified approach to CSS development.
+To generate discussion, exploration and thoughts on how to create a consistent unified approach to CSS development.
 
 
 ## 1. File Structure
