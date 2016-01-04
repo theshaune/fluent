@@ -33,12 +33,12 @@ All files should be imported in a single .scss file, this will be the **only** f
 .
 ├── init.scss
 ├── base
-│   ├── function.scss
-│   ├── variables.scss
-│   ├── normalize.scss
-│   ├── global.scss
+│   ├── _function.scss
+│   ├── _variables.scss
+│   ├── _normalize.scss
+│   ├── _global.scss
 ├── components
-│   ├── *.scss
+│   ├── _*.scss
 </pre>
 
 <pre>init.scss</pre>
