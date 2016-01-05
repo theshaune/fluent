@@ -29,16 +29,18 @@ All files should be imported in a single .scss file, this will be the **only** f
 
 **Note:** Consider trialing the use of folders intead of dot seperated files, a project currently being worked on is beginning to get tough to find the files in the current format.
 
+**Note:** Consider explicitly prefixing the files with a level number, this will help force the developer to consider what order the files will be imported in. I am trialing the use of 2 digits.
+
 <pre>
 .
 ├── init.scss
 ├── base
-│   ├── _function.scss
-│   ├── _variables.scss
-│   ├── _normalize.scss
-│   ├── _global.scss
+│   ├── _01.variables.scss
+│   ├── _02.functions.scss
+│   ├── _03.normalize.scss
+│   ├── _04.global.scss
 ├── components
-│   ├── _*.scss
+│   ├── _**.*.scss
 </pre>
 
 <pre>init.scss</pre>
