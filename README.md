@@ -70,4 +70,10 @@ All files should be imported in a single .scss file, this will be the **only** f
 /* 4. component.x ... */
 </pre>
 
+## Thoughts
 
+Explore class names in a similar manner to semantic-ui.
+Explore use a seperator in html to break each class
+
+[class*="float left"]
+class="float left | bold font | hidden on small"
