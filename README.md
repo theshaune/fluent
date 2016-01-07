@@ -12,6 +12,11 @@ I hope this repository will generate discussion, exploration and thoughts on how
 
 The pre-processor I will be using in this repository is SASS, I found Stylus & [Sass](http://sass-lang.com/) to be the most natural for me.
 
+### Current Issues
+
+Frameworks often come with a tonne of class's that are not used, this comes at a cost the end user with an increased bandwidth. We need to find a balance between a class for everything and a scaffolding of useful class's.
+
+
 ## Noteworthy frameworks & Reading Material
 
 I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
