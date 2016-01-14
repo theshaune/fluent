@@ -1,41 +1,47 @@
+
 $breakpoints: (
-  small:  ( class: #{\@sm}, width:  480px,  height: 640px ),
-  medium: ( class: #{\@md}, width:  1024px, height: 1024px),
-  large:  ( class: #{\@lg}, width:  1440px, height: 1440px),
-  xlarge: ( class: #{\@xl}, width:  1920px, height: 1080px),
+  small:  ( class: #{\@sm-}, width:  0,      height: 640px ),
+  medium: ( class: #{\@md-}, width:  480px,  height: 1024px),
+  large:  ( class: #{\@lg-}, width:  1024px, height: 1440px),
+  xlarge: ( class: #{\@xl-}, width:  1440px, height: 1080px),
 );
 
-$breakpoint-classes: (small, medium, large);
+$breakpoints-classes: (small, medium, large);
 
 @mixin breakpoint($classes) {
   @each $class in $classes {
-    @media screen and (min-width: var($breakpoints, $class width)) {
+    // A Media Query is not required if the width is 0px.
+    @if (var($breakpoints, $class width) == 0px) {
       @content;
+    } 
+    @else {
+      @media screen and (min-width: var($breakpoints, $class width)) {
+        @content;
+      }
     }
   }
 }
 
-@each $class in $breakpoint-classes {
+@each $class in $breakpoints-classes {
   @include breakpoint($class){
+    // Widths
+    // ## Output
+    // @media screen and (min-width: 480px) {
+    //  .@sm-1of12 { width: x% }
+    // }
     .#{var($breakpoints, $class class)}\31 of12 { width:8.33333333%; }
+    .#{var($breakpoints, $class class)}\32 of12 { width:16.66666666%; }
+    .#{var($breakpoints, $class class)}\33 of12 { width:25; }
+    .#{var($breakpoints, $class class)}\34 of12 { width:33.33333333%; }
+    .#{var($breakpoints, $class class)}\35 of12 { width:41.66666666%; }
+    .#{var($breakpoints, $class class)}\36 of12 { width:50%; }
+    .#{var($breakpoints, $class class)}\37 of12 { width:58.33333333%; }
+    .#{var($breakpoints, $class class)}\38 of12 { width:66.66666666%; }
+    .#{var($breakpoints, $class class)}\39 of12 { width:75; }
+    .#{var($breakpoints, $class class)}\31 0of12 { width:83.33333333%; }
+    .#{var($breakpoints, $class class)}\31 1of12 { width:91.66666666%; }
+    .#{var($breakpoints, $class class)}\31 2of12 { width: 100%; }
   }
 }
 
 
-/* output
-@media screen and (min-width: 480px) {
-  .\@sm\31 of12 {
-    width: 8.33333333%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .\@md\31 of12 {
-    width: 8.33333333%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .\@lg\31 of12 {
-    width: 8.33333333%;
-  }
-}
-*/
