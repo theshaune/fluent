@@ -22,26 +22,24 @@ $breakpoints-classes: (small, medium, large);
   }
 }
 
-@each $class in $breakpoints-classes {
-  @include breakpoint($class){
-    // Widths
-    // ## Output
-    // @media screen and (min-width: 480px) {
-    //  .@sm-1of12 { width: x% }
-    // }
-    .#{var($breakpoints, $class class)}\31 of12 { width:8.33333333%; }
-    .#{var($breakpoints, $class class)}\32 of12 { width:16.66666666%; }
-    .#{var($breakpoints, $class class)}\33 of12 { width:25; }
-    .#{var($breakpoints, $class class)}\34 of12 { width:33.33333333%; }
-    .#{var($breakpoints, $class class)}\35 of12 { width:41.66666666%; }
-    .#{var($breakpoints, $class class)}\36 of12 { width:50%; }
-    .#{var($breakpoints, $class class)}\37 of12 { width:58.33333333%; }
-    .#{var($breakpoints, $class class)}\38 of12 { width:66.66666666%; }
-    .#{var($breakpoints, $class class)}\39 of12 { width:75; }
-    .#{var($breakpoints, $class class)}\31 0of12 { width:83.33333333%; }
-    .#{var($breakpoints, $class class)}\31 1of12 { width:91.66666666%; }
-    .#{var($breakpoints, $class class)}\31 2of12 { width: 100%; }
+.grid {
+  .grid { 
+    margin: 0 -10px; 
+    @include clearfix();
   }
 }
+.grid-item { float: left; padding: 10px; }
+.grid-item.end { float: right; }
 
+@each $class in $breakpoints-classes {
+  @include breakpoint($class){
+    @for $i from 1 through 12 {
+      $prefix:    #{var($breakpoints, $class class)};
+      $classname: #{str-insert(\3#{$i}of12, ' ', 4)};
+      $columnWidth: percentage($i/12);
+      .#{$prefix}#{$classname} { width: $columnWidth; }            // width
+      .#{$prefix}push-#{$classname} { margin-left: $columnWidth; } // push
+    }
+  }
+}
 
