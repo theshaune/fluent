@@ -23,10 +23,8 @@ $breakpoints-classes: (small, medium, large);
 }
 
 .grid {
-  .grid { 
-    margin: 0 -10px; 
-    @include clearfix();
-  }
+  @include clearfix();
+  .grid {  margin: 0 -10px; }
 }
 .grid-item { float: left; padding: 10px; }
 .grid-item.end { float: right; }
@@ -34,12 +32,13 @@ $breakpoints-classes: (small, medium, large);
 @each $class in $breakpoints-classes {
   @include breakpoint($class){
     @for $i from 1 through 12 {
+      // Variables
       $prefix:    #{var($breakpoints, $class class)};
       $classname: #{str-insert(\3#{$i}of12, ' ', 4)};
       $columnWidth: percentage($i/12);
-      .#{$prefix}#{$classname} { width: $columnWidth; }            // width
-      .#{$prefix}push-#{$classname} { margin-left: $columnWidth; } // push
+      // Build Classes
+      .#{$prefix}#{$classname}      { width:  $columnWidth; }       // width
+      .#{$prefix}push-#{$classname} { margin-left:  $columnWidth; } // push
     }
   }
 }
-
