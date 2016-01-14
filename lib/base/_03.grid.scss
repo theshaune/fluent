@@ -1,0 +1,22 @@
+$breakpoints: (
+  small:  ( class: #{\@sm}, width:  480px,  height: 640px ),
+  medium: ( class: #{\@md}, width:  1024px, height: 1024px),
+  large:  ( class: #{\@lg}, width:  1440px, height: 1440px),
+  xlarge: ( class: #{\@xl}, width:  1920px, height: 1080px),
+);
+
+$breakpoint-classes: (small, medium, large);
+
+@mixin breakpoint($classes) {
+  @each $class in $classes {
+    @media screen and (min-width: var($breakpoints, $class width)) {
+      @content;
+    }
+  }
+}
+
+@each $class in $breakpoint-classes {
+  @include breakpoint($class){
+    .#{var($breakpoints, $class class)}\31 of12 { width:8.33333333%; }
+  }
+}
