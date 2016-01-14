@@ -84,3 +84,5 @@ Explore use a seperator in html to break each class
 
 [class*="float left"]
 class="float left | bold font | hidden on small"
+
+**https://mathiasbynens.be/demo/crazy-class** Escaping CSS selectors
