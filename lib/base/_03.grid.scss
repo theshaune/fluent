@@ -20,3 +20,22 @@ $breakpoint-classes: (small, medium, large);
     .#{var($breakpoints, $class class)}\31 of12 { width:8.33333333%; }
   }
 }
+
+
+/* output
+@media screen and (min-width: 480px) {
+  .\@sm\31 of12 {
+    width: 8.33333333%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .\@md\31 of12 {
+    width: 8.33333333%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .\@lg\31 of12 {
+    width: 8.33333333%;
+  }
+}
+*/
