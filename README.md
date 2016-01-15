@@ -73,10 +73,11 @@ All files should be imported in a single .scss file, this will be the **only** f
 ## TODO
 
 - Move grid better place for the grid import. component/structure? @import 'base/04.grid';
-- Consider folders with readme per component, opposed to inline commenting
+- Consider folders with readme per component, opposed to inline commenting.
 - Work out a better commenting system.
 - Consider renaming functions/mixins folder to utilities or helpers etc.
-
+- Consider renaming base folder to setup / init.
+- Consider renaming init.scss to fluent.css.
 
 ## Thoughts
 
