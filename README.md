@@ -8,11 +8,10 @@
 ## Introduction
 FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. The Following documentation is a result of my experience with CSS and trying alot of frameworks, naming-conventions.
 
-I hope this repository will generate discussion, exploration and thoughts on how to create a consistent **unified** approach to CSS development.
+I hope this repository will generate discussion, document exploration and thoughts on how to create a consistent **unified** approach to CSS development.
 
-The pre-processor I will be using in this repository is SASS, I found Stylus & [Sass](http://sass-lang.com/) to be the most natural for me.
 
-### Current Issues
+### Current Issues with CSS
 
 Frameworks often come with a tonne of class's that are not used, this comes at a cost the end user with an increased bandwidth. We need to find a balance between a class for everything and a scaffolding of useful class's.
 
@@ -26,7 +25,7 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 * [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 * [Foundation](http://http://foundation.zurb.com)
 * [ITCSS](http://itcss.io/)
-* [Pure](https://github.com/yahoo/pure/)
+* [Pure](http://purecss.io/)
 * [Semantic-ui](http://semantic-ui.com)
 
 
@@ -34,18 +33,20 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 The files must be imported in the correct order to maintain the correct inheritance of styles.
 All files should be imported in a single .scss file, this will be the **only** file in your application that does not begin with _.
 
-**Note:** Consider trialing the use of folders intead of dot seperated files, a project currently being worked on is beginning to get tough to find the files in the current format.
-
-**Note:** Consider explicitly prefixing the files with a level number, this will help force the developer to consider what order the files will be imported in. I am trialing the use of 2 digits.
+**Note:** Consider prefixing files that depend heavily on inheritance order with a number, this will help *force the developer* to consider what order the files will be imported in.
 
 <pre>
 .
 ├── init.scss
 ├── base
-│   ├── _01.variables.scss
+│   ├── _01.variables.default.scss
 │   ├── _02.functions.scss
-│   ├── _03.normalize.scss
-│   ├── _04.global.scss
+│   ├── _03.mixins.scss
+│   ├── _04.grid.scss
+│   ├── _05.normalize.scss
+│   ├── _06.global-elements.scss
+├── external-libraries
+│   ├── _**.*.scss
 ├── components
 │   ├── _**.*.scss
 </pre>
@@ -55,34 +56,28 @@ All files should be imported in a single .scss file, this will be the **only** f
 <pre>
 @charset "UTF-8";
 
-/* 1. base.x */
-@import 'base.functions';
-@import 'base.variables.default';
-@import 'base.variables.theme';
-@import 'base.normalize';
-@import 'base.global';
+/* 1. External Libraries */
+@import '../../node_modules/modularscale-sass/stylesheets/modular-scale';
 
-/* 2. ui.x */
-@import 'ui.grid';
-@import 'ui.layout';
-@import 'ui.menu';
-@import 'ui.megaMenu';
+/* 2. Base */
+@import 'base/01.variables.default';
+@import 'base/02.functions';
+@import 'base/03.mixins';
+@import 'base/04.grid';
+@import 'base/05.normalize';
+@import 'base/06.global-elements';
 
-/* 3. site.x */
-@import 'site';
-@import 'site.header';
-@import 'site.body';
-@import 'site.footer';
-
-/* 4. component.x ... */
+/* 3. component.x ... */
 </pre>
 
 ## Thoughts
 
 Explore class names in a similar manner to semantic-ui.
 Explore use a seperator in html to break each class
+Explore use a escaped characters such as @ to represent media()
 
 [class*="float left"]
 class="float left | bold font | hidden on small"
+class="12of12 | @sm-6of12 | @md-4of12"
 
 **https://mathiasbynens.be/demo/crazy-class** Escaping CSS selectors
