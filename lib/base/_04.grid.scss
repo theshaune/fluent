@@ -1,0 +1,34 @@
+// # Grid
+// 
+// ## Classes
+// .grid
+// .grid-item
+// .grid-item.end
+// .row
+// .1of12
+
+.grid {
+  @include clearfix();
+  .grid {  margin: 0 -10px; }
+}
+.grid-item { float: left; padding: 10px; }
+.grid-item.end { float: right; }
+
+.row { 
+  // Create a class similar to semantic-UI row class.
+}
+
+// Build Grid classes
+@each $class in $breakpoints-classes {
+  @include breakpoint($class){
+    @for $i from 1 through 12 {
+      // Variables
+      $prefix:      #{var($breakpoints, $class class)};
+      $classname:   #{str-insert(\3#{$i}of12, ' ', 4)};
+      $columnWidth: percentage($i/12);
+      // Build Classes
+      .#{$prefix}#{$classname}      { width:  $columnWidth; }       // width
+      .#{$prefix}push-#{$classname} { margin-left:  $columnWidth; } // push
+    }
+  }
+}

@@ -1,21 +1,34 @@
-/* ==========================================================================
-  
-  The files must be imported in the correct order.
-  Styles will be inherited and overwrite styles.
- 
-  Inheritance;
-   1. functions.x
-   2. base.x
-   3. ui.x
-   4. site
-   5. component(s)
-   6. utilities
+/*
+//  # Init
+//
+//  ## Description;
+//  The files must be imported in the correct order.
+//  They will inherit and overwrite styles.
+// 
+//  ## Inheritance;
+//  1. External libraries
+//    / foundation
+//    - modular-scale
+//
+//  2. Base
+//    - variables.default
+//    - functions
+//    - mixins
+//    - normalize
+//    - global-elements
+//
+//  3. Components
+*/
 
-   ========================================================================== */
 @charset "UTF-8";
 
+/* 1. External libraries */
+// @import '../../node_modules/modularscale-sass/stylesheets/modular-scale';
 
-// 1. init.x.x
-@import 'init.variables.default'; //fluentcss variables
-@import 'init.function.var';
-@import 'init.mixin.clearfix';
+/* 2. Base */
+@import 'base/01.variables.default';
+@import 'base/02.functions';
+@import 'base/03.mixins';
+@import 'base/04.grid';
+@import 'base/05.normalize';
+@import 'base/06.global-elements';

@@ -1,0 +1,99 @@
+/*==========================================================================
+  
+  # FluentCSS defaults
+
+  This file must be imported first.
+ 
+  ## Inheritance;
+  1. Breakpoint(s)
+  2. Color(s)
+
+  ========================================================================== */
+
+$site: (
+  container: (
+    max-width: 1020px,
+  ),
+  wrap: (
+    max-width: 1020px,
+  ),
+);
+
+
+$color: (
+  base:  #606060,
+  black: #000000,
+  white: #F1F1F1,
+  code:  #f0f0f0,
+  subtle: (
+    grey: rgba(0,0,0,0.06)
+  ),
+);
+
+
+$typography: (
+  header: (
+    color: black,
+    font-family: ('Poppins', sans-serif),
+    font-size: 16px,
+    font-weight: 500,
+    line-height: 1.5,
+    letter-spacing: 0.025em,
+    text-rendering: geometricPrecision
+  ),
+  base:(
+    // color: var($color, black),
+    font-family: ('Poppins', sans-serif),
+    font-size: 14px,
+    font-weight: 400,
+    line-height: 1.5,
+    letter-spacing: 0.025em,
+  ),
+  micro: (size: 12px, font-size: 12px),
+  large: (size: 5rem),
+  h1: (font-size: 1rem),
+  h2: (font-size: 1rem),
+  h3: (font-size: 1rem),
+  h4: (font-size: 1rem),
+  h5: (font-size: 1rem),
+  h6: (font-size: 1rem),
+  p:  (font-size: 1rem),
+);
+
+
+$brand: (
+  brand:(
+    primary: (
+      color: #111111,
+      // font-family: _(typopgraphy header font-family),
+      line-height: 2,
+    ),
+    secondary: (
+      color: pink,
+      font-family: ('Arial', serif),
+      line-height: 1.5,
+    )
+  )
+);
+
+
+
+
+
+
+
+// FluentCSS defaults
+// ------------------
+// 1. Breakpoint(s)
+// 2. Color(s)
+// ------------------
+
+// 1. Breakpoint(s)
+$breakpoints: (
+  small:  ( class: '',       width:  0px,    height: 0px ),
+  medium: ( class: #{\@md-}, width:  480px,  height: 1024px),
+  large:  ( class: #{\@lg-}, width:  1024px, height: 1440px),
+  xlarge: ( class: #{\@xl-}, width:  1440px, height: 1080px),
+);
+
+$breakpoints-classes: (small, medium, large);
