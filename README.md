@@ -70,11 +70,20 @@ All files should be imported in a single .scss file, this will be the **only** f
 /* 3. component.x ... */
 </pre>
 
+## TODO
+
+- Move grid better place for the grid import. component/structure? @import 'base/04.grid';
+- Consider folders with readme per component, opposed to inline commenting
+- Work out a better commenting system.
+- Consider renaming functions/mixins folder to utilities or helpers etc.
+
+
 ## Thoughts
 
 Explore class names in a similar manner to semantic-ui.
 Explore use a seperator in html to break each class
 Explore use a escaped characters such as @ to represent media()
+
 
 [class*="float left"]
 class="float left | bold font | hidden on small"
