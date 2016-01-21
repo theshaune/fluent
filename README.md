@@ -8,10 +8,7 @@
 ## Introduction
 FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. The Following documentation is a result of my experience with CSS and trying alot of frameworks, naming-conventions.
 
-I hope this repository will generate discussion, document exploration and thoughts on how to create a consistent **unified** approach to CSS development.
-
-
-### Current Issues with CSS
+I hope this repository will generate discussion, exploration and ideas on how to create a consistent **unified** approach to CSS development.
 
 Frameworks often come with a tonne of class's that are not used, this comes at a cost the end user with an increased bandwidth. We need to find a balance between a class for everything and a scaffolding of useful class's.
 
@@ -33,8 +30,7 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 The files must be imported in the correct order to maintain the correct inheritance of styles.
 All files should be imported in a single .scss file, this will be the **only** file in your application that does not begin with _.
 
-**Note:** Consider prefixing files that depend heavily on inheritance order with a number, this will help *force the developer* to consider what order the files will be imported in.
-
+*Note: Consider prefixing files that rely on a specific inheritance order as this may help force the developer to consider what order the files will be imported in.*
 <pre>
 .
 ├── init.scss
@@ -46,14 +42,26 @@ All files should be imported in a single .scss file, this will be the **only** f
 │   ├── _05.normalize.scss
 │   ├── _06.global-elements.scss
 ├── external-libraries
-│   ├── _**.*.scss
+│   ├── _\*\*.\*.scss
 ├── components
-│   ├── _**.*.scss
+│   ├── _\*\*.\*.scss
+├── utilities
+│   ├── _\*\*.\*.scss
+├── functions
+│   ├── _\*\*.\*.scss
+├── mixins
+│   ├── _\*\*.\*.scss
 </pre>
+
+
+## 2. init.scss
+
+Located in the root directory this file importas all of our `_.scss` files. 
+*Note: It is very important to import the files in the correct order.*
 
 <pre>init.scss</pre>
 
-<pre>
+```scss
 @charset "UTF-8";
 
 /* 1. External Libraries */
@@ -68,7 +76,7 @@ All files should be imported in a single .scss file, this will be the **only** f
 @import 'base/06.global-elements';
 
 /* 3. component.x ... */
-</pre>
+```
 
 ## TODO
 
@@ -78,6 +86,10 @@ All files should be imported in a single .scss file, this will be the **only** f
 - Consider renaming functions/mixins folder to utilities or helpers etc.
 - Consider renaming base folder to setup / init.
 - Consider renaming init.scss to fluent.css.
+- Add Inuit utility classes mt+, mt++ etc. Consider use of mt\*1, mt\*2.
+- Media Query function needs to be implemented.
+- Clean up _variables.scss
+
 
 ## Thoughts
 

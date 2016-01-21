@@ -8,7 +8,7 @@
 For more information please read this [article](http://cereal.co/deep-nested-variables-in-sass/)
 
 ### Example use;
-<pre>
+```scss
   @import 'function.var';
   
   $map: (
@@ -20,4 +20,4 @@ For more information please read this [article](http://cereal.co/deep-nested-var
   div {
     color: var($map, brand primary);
   }
-</pre>
+```
