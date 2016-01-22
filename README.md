@@ -22,6 +22,7 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 * [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 * [Foundation](http://http://foundation.zurb.com)
 * [ITCSS](http://itcss.io/)
+* [InuitCSS](https://github.com/inuitcss/)
 * [Pure](http://purecss.io/)
 * [Semantic-ui](http://semantic-ui.com)
 
@@ -35,6 +36,10 @@ All files should be imported in a single .scss file, this will be the **only** f
 .
 ├── init.scss
 ├── base
+│   ├── functions
+│       ├── _\*\*.\*.scss
+│   ├── mixins
+│       ├── _\*\*.\*.scss
 │   ├── _01.variables.default.scss
 │   ├── _02.functions.scss
 │   ├── _03.mixins.scss
@@ -76,7 +81,10 @@ Located in the root directory this file importas all of our `_.scss` files.
 @import 'base/05.normalize';
 @import 'base/06.global-elements';
 
-/* 3. component.x ... */
+/* 3. Components ... */
+/* 4. Functions  ... */
+/* 5. Utilities  ... */
+
 ```
 
 ## TODO
