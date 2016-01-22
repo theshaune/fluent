@@ -14,8 +14,9 @@
 .grid-item { float: left; padding: 10px; }
 .grid-item.end { float: right; }
 
-.row { 
-  // Create a class similar to semantic-UI row class.
+.grid-row { 
+  @include clearfix();
+  width: 100%;
 }
 
 // Build Grid classes
@@ -27,8 +28,8 @@
       $classname:   #{str-insert(\3#{$i}of12, ' ', 4)};
       $columnWidth: percentage($i/12);
       // Build Classes
-      .#{$prefix}#{$classname}      { width:  $columnWidth; }       // width
-      .#{$prefix}push-#{$classname} { margin-left:  $columnWidth; } // push
+      .#{$prefix}#{$classname}      { width:  $columnWidth; }       // width class
+      .#{$prefix}push-#{$classname} { margin-left:  $columnWidth; } // push class
     }
   }
 }
