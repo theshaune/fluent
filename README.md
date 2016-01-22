@@ -8,9 +8,9 @@
 ## Introduction
 FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. The Following documentation is a result of my experience with CSS and trying alot of frameworks, naming-conventions.
 
-I hope this repository will generate discussion, exploration and ideas on how to create a consistent **unified** approach to CSS development.
-
 Frameworks often come with a tonne of class's that are not used, this comes at a cost the end user with an increased bandwidth. We need to find a balance between a class for everything and a scaffolding of useful class's.
+
+I hope this repository will generate discussion, exploration and ideas on how to create a consistent **unified** approach to CSS development.
 
 
 ## Noteworthy frameworks & Reading Material
@@ -57,6 +57,7 @@ All files should be imported in a single .scss file, this will be the **only** f
 ## 2. init.scss
 
 Located in the root directory this file importas all of our `_.scss` files. 
+
 *Note: It is very important to import the files in the correct order.*
 
 <pre>init.scss</pre>
