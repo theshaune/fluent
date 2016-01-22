@@ -1,24 +1,24 @@
 /* ==========================================================================
-   
-   # Breadcrumbs
 
-   ## Reference: 
-   http://-
-  
-   ## Elements
-   .component.breadcrumbs
+    # Breadcrumbs
 
-   ## Html
-   <nav class="component breadcrumbs">
+    ## Reference: 
+    http://-
+
+    ## Elements
+    .breadcrumbs
+
+    ## Html
+    <nav class="component breadcrumbs">
       <li><a href="/">Home</a>
       <li><a href="#">Parent</a>
       <li><a href="#">Child</a>
       <li><a href="#">Current</a>
-   </nav>
+    </nav>
    
    ========================================================================== */
 
-.component.breadcrumbs {
+.breadcrumbs {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -29,7 +29,7 @@
       padding: 0 5px;
     }
   }
-  .active {
+  .\+active {
     pointer-events: none;
   }
 }

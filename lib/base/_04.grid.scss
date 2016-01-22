@@ -1,11 +1,14 @@
-// # Grid
+//  # Grid
 // 
-// ## Classes
-// .grid
-// .grid-item
-// .grid-item.end
-// .row
-// .1of12
+//  ## Description
+//  A very lightwiright grid.
+//
+//  ## Classes
+//  .grid
+//  .grid-item
+//  .grid-item.end
+//  .row
+//  .1of12
 
 .grid {
   @include clearfix();
@@ -13,7 +16,7 @@
 }
 
 .grid-item { float: left; padding: 10px; }
-.grid-item.end { float: right; }
+.grid-item.\+end { float: right; }
 
 .grid-row { 
   @include clearfix();

@@ -18,6 +18,9 @@
 //    - global-elements
 //
 //  3. Components
+//
+//  4. Utilities
+//
 */
 
 @charset "UTF-8";
@@ -34,7 +37,9 @@
 @import 'base/06.global-elements';
 
 /* 3. Components */
+@import 'components/breadcrumbs';
 
 /* 4. Utilites */
 @import 'utilities/margins';
 @import 'utilities/padding';
+@import 'utilities/ellipsis';
