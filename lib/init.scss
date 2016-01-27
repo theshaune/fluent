@@ -23,7 +23,7 @@
 //
 */
 
-@charset "UTF-8";
+
 
 /* 1. External libraries */
 // @import '../../node_modules/modularscale-sass/stylesheets/modular-scale';
@@ -37,7 +37,7 @@
 @import 'base/06.global-elements';
 
 /* 3. Components */
-@import 'components/breadcrumbs';
+@import 'components/breadcrumbs/breadcrumbs';
 
 /* 4. Utilites */
 @import 'utilities/margins';

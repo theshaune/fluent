@@ -1,0 +1,22 @@
+$breakpoints: (
+  small:  ( class: #{\@sm-}, width:  0,      height: 640px ),
+  medium: ( class: #{\@md-}, width:  480px,  height: 1024px),
+  large:  ( class: #{\@lg-}, width:  1024px, height: 1440px),
+  xlarge: ( class: #{\@xl-}, width:  1440px, height: 1080px),
+)!default;
+
+$breakpoints-classes: (small, medium, large)!default;
+
+@mixin breakpoint($classes) {
+  @each $class in $classes {
+    // A Media Query is not required if the width is 0px.
+    @if (var($breakpoints, $class width) == 0px) {
+      @content;
+    } 
+    @else {
+      @media screen and (min-width: var($breakpoints, $class width)) {
+        @content;
+      }
+    }
+  }
+}
