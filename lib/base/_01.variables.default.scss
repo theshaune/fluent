@@ -84,7 +84,7 @@ $brand: (
 // FluentCSS defaults
 // ------------------
 // 1. Breakpoint(s)
-// 2. Color(s)
+// 2. Site width(s)
 // ------------------
 
 // 1. Breakpoint(s)
@@ -96,3 +96,12 @@ $breakpoints: (
 );
 
 $breakpoints-classes: (small, medium, large);
+
+
+// 2. Site width(s)
+$max-width: 1024px;
+// $site-widths: (
+//   small: ( max-width: 0px )
+// );
+
+
