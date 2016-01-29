@@ -10,6 +10,7 @@
 //  .row
 //  .1of12
 
+
 .grid {
   @include clearfix();
   .grid {  margin: 0 -10px; }
@@ -20,7 +21,7 @@
   width: 100%;
 }
 
-.grid-item { float: left; padding: 10px; }
+.grid-item { float: left; padding: 0.75rem; }
 .grid-item.\+end { float: right; }
 
 .grid-container { /* class is reserved for full readability */ }

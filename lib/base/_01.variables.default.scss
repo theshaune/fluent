@@ -78,7 +78,10 @@ $brand: (
 
 
 
-
+$grid: (
+  columns: 12,
+  gutters: ( width: 1rem )
+);
 
 
 // FluentCSS defaults

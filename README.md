@@ -6,14 +6,13 @@
 1. able to express oneself easily and articulately.
 
 ## Introduction
-FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. The Following documentation is a result of my experience with CSS and trying alot of frameworks, naming-conventions.
-
-Frameworks often come with a tonne of class's that are not used, this comes at a cost the end user with an increased bandwidth. We need to find a balance between a class for everything and a scaffolding of useful class's.
+FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. This is a result of [my](http://twitter.com/shaunewest) experience with CSS. Through the years I have  made an effort to try as many frameworks and naming-conventions as I can.
 
 I hope this repository will generate discussion, exploration and ideas on how to create a consistent **unified** approach to CSS development.
 
+*The Best CSS framework is one that works for the entire team, not just the indivual.*
 
-## Noteworthy frameworks & Reading Material
+### Noteworthy frameworks & Reading Material
 
 I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
 
@@ -27,7 +26,29 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 * [Semantic-ui](http://semantic-ui.com)
 
 
-## 1. File Structure
+# FLUENTCSS
+
+## 1. Naming Convention
+
+FluentCSS follows a very similar naming convention to [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) with the expection of modifer classes and the addition of pipes in the markup to seperate classes.
+
+```html
+<div class = "ParentName | .grid">
+  <div class="ParentName-childName +modifierOne | .grid-item 1of3 sm-3of3"></div>
+  <div class="ParentName-childName +modifierTwo is-active | .grid-item 1of3 sm-3of3"></div>
+  <div class="ParentName-childName +modifierTwo | .grid-item 1of3 sm-3of3"></div>
+</div>
+```
+
+```css
+.ParentName
+.ParentName-childName
+.ParentName-childName.+modifier
+.ParentName-childName.is-active
+.ParentName-childName.has-x
+```
+
+## 2. File Structure
 The files must be imported in the correct order to maintain the correct inheritance of styles.
 All files should be imported in a single .scss file, this will be the **only** file in your application that does not begin with _.
 
@@ -59,7 +80,7 @@ All files should be imported in a single .scss file, this will be the **only** f
 </pre>
 
 
-## 2. init.scss
+## 3. init.scss
 
 Located in the root directory this file importas all of our `_.scss` files. 
 
@@ -92,12 +113,10 @@ Located in the root directory this file importas all of our `_.scss` files.
 - Move grid better place for the grid import. component/structure? @import 'base/04.grid';
 - Consider folders with readme per component, opposed to inline commenting.
 - Work out a better commenting system.
-- Consider renaming functions/mixins folder to utilities or helpers etc.
-- Consider renaming base folder to setup / init.
 - Consider renaming init.scss to fluent.css.
-- Add Inuit utility classes mt+, mt++ etc. Consider use of mt\*1, mt\*2.
 - Media Query function needs to be implemented.
 - Clean up _variables.scss
+- Consdier + prefix for .is-active
 
 
 ## Thoughts
