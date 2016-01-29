@@ -8,13 +8,12 @@
 ## Introduction
 FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. This is a result of [my](http://twitter.com/shaunewest) experience with CSS. Through the years I have  made an effort to try as many frameworks and naming-conventions as I can.
 
-I hope this repository will generate discussion, exploration and ideas on how to create a consistent **unified** approach to CSS development.
+I hope this repository will generate discussion, exploration and ideas on how to create a consistent **unified** approach to CSS development. *The Best CSS framework is one that works for the entire team, not just the indivual.*
 
-*The Best CSS framework is one that works for the entire team, not just the indivual.*
 
 ### Noteworthy frameworks & Reading Material
 
-I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
+There are far too many to list. I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
 
 * [BEM](https://en.bem.info/method/)
 * [Bootstrap](http://getbootstrap.com)
@@ -25,8 +24,6 @@ I have used, played with, studied, loved, hated & found inspiration, from using 
 * [Pure](http://purecss.io/)
 * [Semantic-ui](http://semantic-ui.com)
 
-
-# FLUENTCSS
 
 ## 1. Naming Convention
 
@@ -41,11 +38,16 @@ FluentCSS follows a very similar naming convention to [SuitCSS](https://github.c
 ```
 
 ```css
+// components
+// PascalCase-camelCase.#{prefix}camelcase
 .ParentName
 .ParentName-childName
-.ParentName-childName.+modifier
+.ParentName-childName.\+modifier
 .ParentName-childName.is-active
 .ParentName-childName.has-x
+
+// utilites/global classes
+.camelCase
 ```
 
 ## 2. File Structure
