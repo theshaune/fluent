@@ -13,11 +13,13 @@ I hope this repository will generate discussion, exploration and ideas on how to
 
 ### Noteworthy frameworks & Reading Material
 
-There are far too many to list. I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application.
+There are far too many to list. I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application. 
 
+My preferred framework is SuitCSS, FluentCSS follows a similar naming convention to [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) with the expection of modifer classes, resposive classes, utility classes and the addition of pipes in the markup to seperate classes.
+
+* [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 * [BEM](https://en.bem.info/method/)
 * [Bootstrap](http://getbootstrap.com)
-* [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 * [Foundation](http://http://foundation.zurb.com)
 * [ITCSS](http://itcss.io/)
 * [InuitCSS](https://github.com/inuitcss/)
@@ -26,8 +28,6 @@ There are far too many to list. I have used, played with, studied, loved, hated 
 
 
 ## 1. Naming Convention
-
-FluentCSS follows a very similar naming convention to [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) with the expection of modifer classes and the addition of pipes in the markup to seperate classes.
 
 ```html
 <div class = "ParentName | .grid">
