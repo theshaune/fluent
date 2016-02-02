@@ -112,24 +112,21 @@ Located in the root directory this file importas all of our `_.scss` files.
 
 ## TODO
 
-- Move grid better place for the grid import. component/structure? @import 'base/04.grid';
+- Move grid better place for the grid import. component/structure? @import 'base/04.grid'; is a grid nessercary, hasn't been used at all in the previous 2 projects. 
 - Consider folders with readme per component, opposed to inline commenting.
+- Consider replacing + with - for modifiers.
 - Work out a better commenting system.
 - Consider renaming init.scss to fluent.css.
 - Media Query function needs to be implemented.
 - Clean up _variables.scss
-- Consdier + prefix for .is-active
-
 
 ## Thoughts
 
 Explore class names in a similar manner to semantic-ui.
-Explore use a seperator in html to break each class
-Explore use a escaped characters such as @ to represent media()
+Explore use of a escaped characters such as @ to represent media()
 
 
 [class*="float left"]
-class="float left | bold font | hidden on small"
 class="12of12 | @sm-6of12 | @md-4of12"
 
 **https://mathiasbynens.be/demo/crazy-class** Escaping CSS selectors
