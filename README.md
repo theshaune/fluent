@@ -63,7 +63,7 @@ All files should be imported in a single .scss file, this will be the **only** f
 │       ├── _*.scss
 │   ├── mixins
 │       ├── _*.scss
-│   ├── _01.variables.default.scss
+│   ├── _01.variables.scss
 │   ├── _02.functions.scss
 │   ├── _03.mixins.scss
 │   ├── _04.grid.scss
