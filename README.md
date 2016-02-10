@@ -30,7 +30,7 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 ## 1. Naming Convention
 
 ```html
-<div class = "ParentName | .grid">
+<div class = "ParentName | grid">
   <div class="ParentName-childName +modifierOne | .grid-item 1of3 sm-3of3"></div>
   <div class="ParentName-childName +modifierTwo is-active | .grid-item 1of3 sm-3of3"></div>
   <div class="ParentName-childName +modifierTwo | .grid-item 1of3 sm-3of3"></div>
@@ -93,7 +93,7 @@ Located in the root directory this file importas all of our `_.scss` files.
 @import '../../node_modules/modularscale-sass/stylesheets/modular-scale';
 
 /* 2. Base */
-@import 'base/01.variables.default';
+@import 'base/01.variables';
 @import 'base/02.functions';
 @import 'base/03.mixins';
 @import 'base/04.grid';
