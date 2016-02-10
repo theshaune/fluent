@@ -60,9 +60,9 @@ All files should be imported in a single .scss file, this will be the **only** f
 ├── init.scss
 ├── base
 │   ├── functions
-│       ├── _\*\*.\*.scss
+│       ├── _*.scss
 │   ├── mixins
-│       ├── _\*\*.\*.scss
+│       ├── _*.scss
 │   ├── _01.variables.default.scss
 │   ├── _02.functions.scss
 │   ├── _03.mixins.scss
@@ -70,15 +70,11 @@ All files should be imported in a single .scss file, this will be the **only** f
 │   ├── _05.normalize.scss
 │   ├── _06.global-elements.scss
 ├── external-libraries
-│   ├── _\*\*.\*.scss
+│   ├── _*.scss
 ├── components
-│   ├── _\*\*.\*.scss
+│   ├── _*.scss
 ├── utilities
-│   ├── _\*\*.\*.scss
-├── functions
-│   ├── _\*\*.\*.scss
-├── mixins
-│   ├── _\*\*.\*.scss
+│   ├── _*.scss
 </pre>
 
 
