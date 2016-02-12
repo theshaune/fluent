@@ -115,6 +115,8 @@ Located in the root directory this file importas all of our `_.scss` files.
 - Consider renaming init.scss to fluent.css.
 - Media Query function needs to be implemented.
 - Clean up _variables.scss
+- Create guidlines for reserved classnames. eg.
+  - .header, .body, .footer, .page-x, .content-x, .container, .wrapper, .contents
 
 ## Thoughts
 
