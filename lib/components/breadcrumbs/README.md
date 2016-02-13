@@ -1,7 +1,7 @@
 Breadcrumbs navigation trail.
 
 ```html
-  <nav class="component breadcrumbs">
+  <nav class="Breadcumbs">
     <li><a href="/">Home</a>
     <li><a href="#">Parent</a>
     <li><a href="#">Child</a>
