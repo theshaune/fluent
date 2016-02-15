@@ -111,8 +111,9 @@ Located in the root directory this file importas all of our `_.scss` files.
 - Move grid better place for the grid import. component/structure? @import 'base/04.grid'; is a grid nessercary, hasn't been used at all in the previous 2 projects. 
 - Consider folders with readme per component, opposed to inline commenting.
 - Consider replacing + with - for modifiers.
-- Work out a better commenting system.
+- Create a _better_ consistent commenting system.
 - Consider renaming init.scss to fluent.css.
+- Implement .wysiwyg class for CMS based inputs.
 - Media Query function needs to be implemented.
 - Clean up _variables.scss
 - Create guidlines for reserved classnames. eg.
@@ -121,7 +122,7 @@ Located in the root directory this file importas all of our `_.scss` files.
 ## Thoughts
 
 Explore class names in a similar manner to semantic-ui.
-Explore use of a escaped characters such as @ to represent media()
+Explore use of escaped characters such as @ to represent media()
 
 
 [class*="float left"]
