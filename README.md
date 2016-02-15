@@ -121,11 +121,8 @@ Located in the root directory this file importas all of our `_.scss` files.
 
 ## Thoughts
 
-Explore class names in a similar manner to semantic-ui.
 Explore use of escaped characters such as @ to represent media()
 
-
-[class*="float left"]
 class="12of12 | @sm-6of12 | @md-4of12"
 
 **https://mathiasbynens.be/demo/crazy-class** Escaping CSS selectors
