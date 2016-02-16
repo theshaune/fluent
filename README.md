@@ -50,11 +50,9 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 .camelCase
 ```
 
-## 2. File Structure
-The files must be imported in the correct order to maintain the correct inheritance of styles.
-All files should be imported in a single .scss file, this will be the **only** file in your application that does not begin with _.
-
+## 2. Folder Structure
 *Note: Consider prefixing files that rely on a specific inheritance order as this may help force the developer to consider what order the files will be imported in.*
+
 <pre>
 .
 ├── init.scss
@@ -81,6 +79,8 @@ All files should be imported in a single .scss file, this will be the **only** f
 ## 3. init.scss
 
 Located in the root directory this file importas all of our `_.scss` files. 
+The files must be imported in the correct order to maintain the correct inheritance of styles.
+This will be the **only** file in the application that does not begin with _.
 
 *Note: It is very important to import the files in the correct order.*
 
@@ -93,16 +93,18 @@ Located in the root directory this file importas all of our `_.scss` files.
 @import '../../node_modules/modularscale-sass/stylesheets/modular-scale';
 
 /* 2. Base */
-@import 'base/01.variables';
-@import 'base/02.functions';
-@import 'base/03.mixins';
-@import 'base/04.grid';
-@import 'base/05.normalize';
-@import 'base/06.global-elements';
+@import 'base/_01.variables';
+@import 'base/_02.functions';
+@import 'base/_03.mixins';
+@import 'base/_04.grid';
+@import 'base/_05.normalize';
+@import 'base/_06.global-elements';
 
 /* 3. Components ... */
-/* 4. Functions  ... */
+@import 'components/_*';
+
 /* 5. Utilities  ... */
+@import 'utilities/_*';
 
 ```
 
