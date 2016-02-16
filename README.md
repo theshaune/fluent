@@ -114,6 +114,7 @@ Located in the root directory this file importas all of our `_.scss` files.
 - Create a _better_ consistent commenting system.
 - Consider renaming init.scss to fluent.css.
 - Implement .wysiwyg class for CMS based inputs.
+  - Consider optional parametors for `wysiwyg(h1, h2)` mixin.
 - Media Query function needs to be implemented.
 - Clean up _variables.scss
 - Create guidlines for reserved classnames. eg.
