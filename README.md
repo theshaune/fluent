@@ -44,18 +44,22 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 </div>
 ```
 
+**Components**
+
 ```css
-// components
-// PascalCase-camelCase.#{prefix}camelcase
 .ParentName
 .ParentName-childName
 .ParentName-childName.-modifier
 .ParentName-childName.is-active
 .ParentName-childName.has-x
+```
 
-// utilites/global classes
+**Utilites & Global classes**
+
+```css
 .camelCase
 ```
+
 
 ## 2. Folder Structure
 *Note: Consider prefixing files that rely on a specific inheritance order as this may help force the developer to consider what order the files will be imported in.*
