@@ -1,4 +1,4 @@
-# FluentCSS
+![Fluent](logo.gif)
 
 **Fluent**
 *adjective*
