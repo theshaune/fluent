@@ -31,9 +31,9 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 
 ```html
 <div class = "ParentName | grid">
-  <div class="ParentName-childName +modifierOne | .grid-item 1of3 sm-3of3"></div>
-  <div class="ParentName-childName +modifierTwo is-active | .grid-item 1of3 sm-3of3"></div>
-  <div class="ParentName-childName +modifierTwo | .grid-item 1of3 sm-3of3"></div>
+  <div class="ParentName-childName -modifierOne | .grid-item 1of3 sm-3of3"></div>
+  <div class="ParentName-childName -modifierTwo is-active | .grid-item 1of3 sm-3of3"></div>
+  <div class="ParentName-childName -modifierTwo | .grid-item 1of3 sm-3of3"></div>
 </div>
 ```
 
@@ -42,7 +42,7 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 // PascalCase-camelCase.#{prefix}camelcase
 .ParentName
 .ParentName-childName
-.ParentName-childName.\+modifier
+.ParentName-childName.-modifier
 .ParentName-childName.is-active
 .ParentName-childName.has-x
 
@@ -112,7 +112,6 @@ This will be the **only** file in the application that does not begin with _.
 
 - Move grid better place for the grid import. component/structure? @import 'base/04.grid'; is a grid nessercary, hasn't been used at all in the previous 2 projects. 
 - Consider folders with readme per component, opposed to inline commenting.
-- Consider replacing + with - for modifiers.
 - Create a _better_ consistent commenting system.
 - Consider renaming init.scss to fluent.css.
 - Implement .wysiwyg class for CMS based inputs.

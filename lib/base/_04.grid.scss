@@ -22,14 +22,14 @@
 }
 
 .grid-item { float: left; padding: 0.75rem; }
-.grid-item.\+end { float: right; }
+.grid-item.-end { float: right; }
 
 .grid-container { /* class is reserved for full readability */ }
 
 .grid-contents {
   margin: 0 auto;
   max-width: 1024px;
-  &.\+tight { max-width: 1024px }
+  &.-tight { max-width: 1024px }
 }
 
 
@@ -45,12 +45,12 @@
 //   &-item {
 //     float: left;
 //     padding: 10px; 
-//     &\+end { float: right; }
+//     &-end { float: right; }
 //   }
 //   Experiementing on a grid wrapper, or container + contents
 //   &-wrapper {
 //     margin: 0 auto;
-//     &.\+tight { max-width: 1024px }
+//     &.-tight { max-width: 1024px }
 //   }
 //   &-container {
 //     margin: 0 auto;
