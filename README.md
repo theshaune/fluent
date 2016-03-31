@@ -15,7 +15,7 @@ I hope this repository will generate discussion, exploration and ideas on how to
 
 There are far too many to list. I have used, played with, studied, loved, hated & found inspiration, from using the following frameworks. They are all worthy of your time to study and trial in atleast one project, you will learn a great deal from actually using each one in an application. 
 
-My preferred framework is SuitCSS, FluentCSS follows a similar naming convention to [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) with the expection of modifer classes, resposive classes, utility classes and the addition of pipes in the markup to seperate classes.
+My preferred framework is SuitCSS, FluentCSS follows a similar naming convention to [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) with the exception of modifer classes, resposive classes, utility classes and the addition of pipes in the markup to seperate classes.
 
 * [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 * [BEM](https://en.bem.info/method/)
