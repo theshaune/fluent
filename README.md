@@ -36,6 +36,8 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 
 ## 1. Naming Convention
 
+#### HTML
+
 ```html
 <div class = "ParentName | grid">
   <div class="ParentName-childName -modifierOne | .grid-item 1of3 sm-3of3"></div>
@@ -43,6 +45,9 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
   <div class="ParentName-childName -modifierTwo | .grid-item 1of3 sm-3of3"></div>
 </div>
 ```
+
+
+#### CSS
 
 **Components**
 
