@@ -144,7 +144,9 @@ This will be the **only** file in the application that does not begin with _.
 ## Thoughts
 
 Explore use of escaped characters such as @ to represent media()
+*class="12of12 | @sm-6of12 | @md-4of12"*
 
-class="12of12 | @sm-6of12 | @md-4of12"
+Explore the use of brackets.
+*padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*
 
 
