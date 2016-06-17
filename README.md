@@ -89,6 +89,8 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 │   ├── _*.scss
 ├── utilities
 │   ├── _*.scss
+├── pages
+│   ├── _*.scss
 </pre>
 
 
@@ -116,12 +118,14 @@ This will be the **only** file in the application that does not begin with _.
 @import 'base/_05.normalize';
 @import 'base/_06.global-elements';
 
-/* 3. Components ... */
+/* 4. Components ... */
 @import 'components/_*';
 
-/* 5. Utilities  ... */
+/* 5. Utilities ... */
 @import 'utilities/_*';
 
+/* 5. Pages ... */
+@import 'pages/_*';
 ```
 
 ## TODO
