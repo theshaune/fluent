@@ -151,4 +151,11 @@ Explore use of escaped characters such as @ to represent media()
 Explore the use of brackets.
 *padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*
 
+Exlpore the use of descriptive namespacing.
+
+- should be used to help indicate what the class for.
+- Doesn't apply any styles on it owns.
+- A sugar coated prefix.
+- Possibly Captilized?
+- example: class="Global Navigation store" .Global.Naviation.store
 
