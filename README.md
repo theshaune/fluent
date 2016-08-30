@@ -164,3 +164,5 @@ Exlpore the use of descriptive namespacing.
 - Possibly Captilized?
 - example: class="Global Navigation store" .Global.Naviation.store
 
+
+Consider Removing global stlyes in favour of placeholders and mixins, creating strong specific components should be prioritized over clunky non-specific markup.
