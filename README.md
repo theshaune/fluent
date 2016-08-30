@@ -140,8 +140,10 @@ This will be the **only** file in the application that does not begin with _.
 - Clean up _variables.scss
 - Create guidlines for reserved classnames. eg.
   - .header, .body, .footer, .page-x, .content-x, .container, .wrapper, .contents
+- Provide more of a description on how to abstract names for better modularity, eg. brand-logo is better than apple-logo in terms of allowing the file to be re-used in future projects.
 
 ## Thoughts
+
 
 Eplore a different naming convention for "pages", would "uniques", or "specifics" be better? or a subfolder in components
 
