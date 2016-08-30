@@ -147,9 +147,12 @@ Eplore a different naming convention for "pages", would "uniques", or "specifics
 
 Explore use of escaped characters such as @ to represent media()
 *class="12of12 | @sm-6of12 | @md-4of12"*
+- This worked well, It was visually easy to identify and quick to learn, consider implementing.
 
 Explore the use of brackets.
 *padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*
+- This was slightly strange, need more discussion on merit. However It did work well for negative values.
+
 
 Exlpore the use of descriptive namespacing.
 
