@@ -164,5 +164,8 @@ Exlpore the use of descriptive namespacing.
 - Possibly Captilized?
 - example: class="Global Navigation store" .Global.Naviation.store
 
+Explore the use of indicative + random names.
+
+As the classname is 100% entirely used to identify and apply styles/changes to the markup, and we know that it doesn't make any difference if hte class is "x" or "X". A solution to help identify components could be to use a name that indicates what it is and then a name to identify the styles. This combined with a styleguide could lead to an easy to use library of components. example `.Page-Header.hollywood`
 
 Consider Removing global stlyes in favour of placeholders and mixins, creating strong specific components should be prioritized over clunky non-specific markup.
