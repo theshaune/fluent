@@ -165,4 +165,10 @@ Explore the use of indicative + random names.
 
 As the classname is 100% entirely used to identify and apply styles/changes to the markup, and we know that it doesn't make any difference if hte class is "x" or "X". A solution to help identify components could be to use a name that indicates what it is and then a name to identify the styles. This combined with a styleguide could lead to an easy to use library of components. example `.Page-Header.hollywood`
 
+*Exlpore* the use of .Component .child,
+
+- as some components will never be mixed, it can be over the top to use the strict naming convention
+- children classes already adhere to pascal case. So in some instances there is almost no chance of a clash
+- jQuery could clash two classes such as `price`. explore this.
+
 Consider Removing global stlyes in favour of placeholders and mixins, creating strong specific components should be prioritized over clunky non-specific markup.
