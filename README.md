@@ -144,9 +144,6 @@ This will be the **only** file in the application that does not begin with _.
 
 ## Thoughts
 
-
-Eplore a different naming convention for "pages", would "uniques", or "specifics" be better? or a subfolder in components
-
 Explore use of escaped characters such as @ to represent media()
 *class="12of12 | @sm-6of12 | @md-4of12"*
 - This worked well, It was visually easy to identify and quick to learn, consider implementing.
