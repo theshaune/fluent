@@ -119,6 +119,7 @@ This will be the **only** file in the application that does not begin with _.
 @import 'base/_06.global-elements';
 
 /* 4. Components ... */
+@import 'components/_form';
 @import 'components/_*';
 
 /* 5. Utilities ... */
