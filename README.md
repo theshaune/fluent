@@ -173,3 +173,6 @@ As the classname is 100% entirely used to identify and apply styles/changes to t
 - jQuery could clash two classes such as `price`. explore this.
 
 Consider Removing global stlyes in favour of placeholders and mixins, creating strong specific components should be prioritized over clunky non-specific markup.
+
+
+*Explore* a flatter structure, closer to the nature of css.
