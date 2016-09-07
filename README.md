@@ -174,3 +174,9 @@ As the classname is 100% entirely used to identify and apply styles/changes to t
 
 
 *Explore* a flatter structure, closer to the nature of css.
+
+Possible structure
+
+- Collections
+- Components
+- Utitlies < base may be able to live here.
