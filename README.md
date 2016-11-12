@@ -146,13 +146,15 @@ This will be the **only** file in the application that does not begin with _.
 
 ## Thoughts
 
+Explore the use of semantic grid names. For example, using `.grid`, `grid-i`, inside of a `.component` can break it up and make it *feel* a little strange. by using selectors that target anything with `-grid` affixed we can keep the semantic classes, keep the css dry and the added benifit of now being able to target specific grid areas semanticaly .
+
 Explore use of escaped characters such as @ to represent media()
 *class="12of12 | @sm-6of12 | @md-4of12"*
 - This worked well, It was visually easy to identify and quick to learn, consider implementing.
 
 Explore the use of brackets.
 *padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*
-- This was slightly strange, need more discussion on merit. However It did work well for negative values.
+- Need more discussion on merit. However It did work well for negative values, also has potential for Media Queries.
 
 
 Exlpore the use of descriptive namespacing.
