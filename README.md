@@ -133,11 +133,9 @@ This will be the **only** file in the application that does not begin with _.
 
 - **Refactor. Simplify. Flatten. Pug it.**
 - Move grid better place for the grid import. component/structure? @import 'base/04.grid'; is a grid nessercary, hasn't been used at all in the previous 2 projects. 
-- Consider folders with readme per component, opposed to inline commenting.
 - Create a _better_ consistent commenting system.
-- Consider renaming init.scss to fluent.css.
+- Consider renaming init.scss to fluent.css or index.scss.
 - Implement .wysiwyg class for CMS based inputs.
-  - Consider optional parametors for `wysiwyg(h1, h2)` mixin.
 - Media Query function needs to be implemented.
 - Clean up _variables.scss
 - Create guidlines for reserved classnames. eg.
