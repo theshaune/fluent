@@ -73,7 +73,7 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
   /* Parent to all the things. */
   .parent {
     display: block;
-    //color: pink;
+    // color: pink;
   }
 ```
 
