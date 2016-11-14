@@ -67,7 +67,8 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 
 **Comments**
 ```css
-  /* Documentation and notes should use the single or multi-line syntax 
+  /**
+   * Documentation of styles and notes should use the single or multi-line syntax 
    * // Forward slash commenting should be reserved for code.
    */
   
