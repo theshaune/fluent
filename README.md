@@ -65,6 +65,17 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 .camelCase
 ```
 
+**Comments**
+```css
+  /* Documentation and notes should use the single or multi-line syntax */
+  // Forward slash commenting should be reserved for code.
+  
+  /* Parent to all the things. */
+  .parent {
+    display: block;
+    //color: pink;
+  }
+```
 
 ## 2. Folder Structure
 *Note: Consider prefixing files that rely on a specific inheritance order as this may help force the developer to consider what order the files will be imported in.*
@@ -133,7 +144,6 @@ This will be the **only** file in the application that does not begin with _.
 
 - **Refactor. Simplify. Flatten. Pug it.**
 - Move grid better place for the grid import. component/structure? @import 'base/04.grid'; is a grid nessercary, hasn't been used at all in the previous 2 projects. 
-- Create a _better_ consistent commenting system.
 - Consider renaming init.scss to fluent.css or index.scss.
 - Implement .wysiwyg class for CMS based inputs.
 - Media Query function needs to be implemented.
