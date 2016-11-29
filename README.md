@@ -75,7 +75,7 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 @media screen and (max-width: $sm) {
   .class\@sm- {}
 }
-@media screen and (max-width: $md) 
+@media screen and (max-width: $md) {
   .class\@md- {}
 }
 @media screen and (max-width: $lg){ 
