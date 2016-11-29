@@ -39,11 +39,20 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 #### HTML
 
 ```html
-<div class = "ParentName | grid">
-  <div class="ParentName-childName -modifierOne | .grid-item 1of3 sm-3of3"></div>
-  <div class="ParentName-childName -modifierTwo is-active | .grid-item 1of3 sm-3of3"></div>
-  <div class="ParentName-childName -modifierTwo | .grid-item 1of3 sm-3of3"></div>
+<div class="parentName | grid">
+  <div class="parentName-childName is-modifierOne | .grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="parentName-childName is-modifierOne | .grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="parentName-childName is-modifierOne | .grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="parentName-childName is-modifierOne | .grid-item 4of4 2of4@sm 1of4@md+"></div>
 </div>
+
+<!-- Semantic Example -->
+<header class="header -large -branded">
+  <div class="header-container">
+    <h1 class="header-title"></h1>
+    <p class="header-description"></p>
+  </div>
+</header>
 ```
 
 
@@ -52,17 +61,28 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 **Components**
 
 ```css
-.ParentName
-.ParentName-childName
-.ParentName-childName.-modifier
-.ParentName-childName.is-active
-.ParentName-childName.has-x
+.parentName
+.parentName-childName
+.parentName-childName.-modifier
+.parentName-childName.is-active
+.parentName-childName.has-x
 ```
 
-**Utilites & Global classes**
+** Responsive classes**
 
 ```css
-.camelCase
+.class\@sm+ {}
+.class\@md+ {}
+.class\@lg+ {}
+
+.class\@sm- {}
+.class\@sm- {}
+.class\@sm- {}
+
+.class\@sm-md {}
+.class\@sm-lg {}
+.class\@md-lg {}
+
 ```
 
 **Comments**
