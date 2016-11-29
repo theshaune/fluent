@@ -71,18 +71,36 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 ** Responsive classes**
 
 ```css
-.class\@sm+ {}
-.class\@md+ {}
-.class\@lg+ {}
 
-.class\@sm- {}
-.class\@sm- {}
-.class\@sm- {}
+@media screen and (max-width: $sm) {
+  .class\@sm- {}
+}
+@media screen and (max-width: $md) 
+  .class\@md- {}
+}
+@media screen and (max-width: $lg){ 
+  .class\@lg- {}
+}
 
-.class\@sm-md {}
-.class\@sm-lg {}
-.class\@md-lg {}
+@media screen and (min-width: $sm) {
+  .class\@sm+ {}
+}
+@media screen and (min-width: $md) 
+  .class\@md+ {}
+}
+@media screen and (min-width: $lg){ 
+  .class\@lg+ {}
+}
 
+@media screen and (min-width: $sm) and (max-width: $md){ 
+  .class\@sm-md {}
+}
+@media screen and (min-width: $sm) and (max-width: $lg){ 
+  .class\@sm-lg {}
+}
+@media screen and (min-width: $md) and (max-width: $lg){ 
+  .class\@md-lg {}
+}
 ```
 
 **Comments**
