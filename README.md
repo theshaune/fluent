@@ -85,7 +85,7 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 @media screen and (min-width: $sm) {
   .class\@sm+ {}
 }
-@media screen and (min-width: $md) 
+@media screen and (min-width: $md) {
   .class\@md+ {}
 }
 @media screen and (min-width: $lg){ 
