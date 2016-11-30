@@ -203,12 +203,12 @@ Explore use of escaped characters such as @ to represent media()
 - This worked well, It was visually easy to identify and quick to learn, consider implementing.~~
 I have added the current way that i bevlieve is semantic and very easy to understand to the documentation, I am not sure if I have got it completely correct, possily using @-sm, @-md may be better for max-width use cases, this can be closed once this has been explored.
 
-Explore the use of brackets.
+### Explore the use of brackets.
 *padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*
 - Need more discussion on merit. However It did work well for negative values, also has potential for Media Queries.
 
 
-Exlpore the use of descriptive namespacing.
+### Exlpore the use of descriptive namespacing.
 - should be used to help indicate what the class for.
 - Doesn't apply any styles on it owns.
 - ~~A sugar coated prefix.~~
@@ -218,7 +218,7 @@ Exlpore the use of descriptive namespacing.
 With the remaining 2 reasons left, essentially this class would be something like 'component' but it does nothing aside from tell the developer that it is a componenet, upon futher thoughts, It does seem that it is unnessercary waffle. consider removing.
 
 
-Explore the use of indicative + random names.
+### Explore the use of indicative + random names.
 
 As the classname is 100% entirely used to identify and apply styles/changes to the markup, and we know that it doesn't make any difference if hte class is "x" or "X". A solution to help identify components could be to use a name that indicates what it is and then a name to identify the styles. This combined with a styleguide could lead to an easy to use library of components. example `.Page-Header.hollywood`
 
@@ -231,14 +231,14 @@ This may seem a little counter-intuitive in the begining but if we think of the 
 
 Although this is a scenerio where it is unlikely to happen unless we have a large and complex website with many different areas. But let's say we have 4 different header styles, all large *hero header* type sections. They are not specific to a pge, but rather simply selected by the user in a CMS to suit whatever the user decides is relevant to their article...
 
-**Some examples may be;
+**Some examples may be;**
 
 - modern
 - contemporary
 - abstract
 - illustrative
 
-**Or even as generic as;
+**Or even as generic as;**
 
 - brooklyn
 - nyc
@@ -267,8 +267,8 @@ or seperate classes;
 
 *Explore* a flatter structure, closer to the nature of css.
 
-Possible structure
+### Possible structure
 
 - Collections
-- Components
+- ~~Components~~
 - Utitlies ~~< base may be able to live here.~~
