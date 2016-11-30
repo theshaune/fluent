@@ -199,8 +199,8 @@ Explore the use of semantic grid names. For example, using `.grid`, `grid-i`, in
 Although this seems like a nice idea, i believe it would be difficult to get across to an entire team and i belive it may be difficult to keep consistent, almost too abstract an relies on a strong knowledge of advanced css selectors. But it definitely worth exploring the potential for this.
 
 Explore use of escaped characters such as @ to represent media()
-~~*class="12of12 | @sm-6of12 | @md-4of12"*
-- This worked well, It was visually easy to identify and quick to learn, consider implementing.~~
+~~*class="12of12 | @sm-6of12 | @md-4of12"*~~
+~~- This worked well, It was visually easy to identify and quick to learn, consider implementing.~~
 I have added the current way that i bevlieve is semantic and very easy to understand to the documentation, I am not sure if I have got it completely correct, possily using @-sm, @-md may be better for max-width use cases, this can be closed once this has been explored.
 
 ### Explore the use of brackets.
