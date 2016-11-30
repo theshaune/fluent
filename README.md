@@ -195,11 +195,13 @@ This will be the **only** file in the application that does not begin with _.
 
 ## Thoughts
 
-Explore the use of semantic grid names. For example, using `.grid`, `grid-i`, inside of a `.component` can break it up and make it *feel* a little strange. by using selectors that target anything with `-grid` affixed we can keep the semantic classes, keep the css dry and the added benifit of now being able to target specific grid areas semanticaly .
+Explore the use of semantic grid names. For example, using `.grid`, `grid-i`, inside of a `.component` can break it up and make it *feel* a little strange. by using selectors that target anything with `-grid` affixed we can keep the semantic classes, keep the css dry and the added benifit of now being able to target specific grid areas semanticaly.
+Although this seems like a nice idea, i believe it would be difficult to get across to an entire team and i belive it may be difficult to keep consistent, almost too abstract an relies on a strong knowledge of advanced css selectors. But it definitely worth exploring the potential for this.
 
 Explore use of escaped characters such as @ to represent media()
-*class="12of12 | @sm-6of12 | @md-4of12"*
-- This worked well, It was visually easy to identify and quick to learn, consider implementing.
+~~*class="12of12 | @sm-6of12 | @md-4of12"*
+- This worked well, It was visually easy to identify and quick to learn, consider implementing.~~
+I have added the current way that i bevlieve is semantic and very easy to understand to the documentation, I am not sure if I have got it completely correct, possily using @-sm, @-md may be better for max-width use cases, this can be closed once this has been explored.
 
 Explore the use of brackets.
 *padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*
@@ -207,22 +209,18 @@ Explore the use of brackets.
 
 
 Exlpore the use of descriptive namespacing.
-
 - should be used to help indicate what the class for.
 - Doesn't apply any styles on it owns.
-- A sugar coated prefix.
-- Possibly Captilized?
-- example: class="Global Navigation store" .Global.Naviation.store
+- ~~A sugar coated prefix.~~
+- ~~Possibly Captilized?~~
+- ~~example: class="Global Navigation store" .Global.Naviation.store~~
+
+With the remaining 2 reasons left, essentially this class would be something like 'component' but it does nothing aside from tell the developer that it is a componenet, upon futher thoughts, It does seem that it is unnessercary waffle. consider removing.
+
 
 Explore the use of indicative + random names.
 
 As the classname is 100% entirely used to identify and apply styles/changes to the markup, and we know that it doesn't make any difference if hte class is "x" or "X". A solution to help identify components could be to use a name that indicates what it is and then a name to identify the styles. This combined with a styleguide could lead to an easy to use library of components. example `.Page-Header.hollywood`
-
-*Exlpore* the use of .Component .child,
-
-- as some components will never be mixed, it can be over the top to use the strict naming convention
-- children classes already adhere to pascal case. So in some instances there is almost no chance of a clash
-- jQuery could clash two classes such as `price`. explore this.
 
 
 *Explore* a flatter structure, closer to the nature of css.
@@ -231,4 +229,4 @@ Possible structure
 
 - Collections
 - Components
-- Utitlies < base may be able to live here.
+- Utitlies ~~< base may be able to live here.~~
