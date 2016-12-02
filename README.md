@@ -258,12 +258,19 @@ I am yet to explore whether this should be a modifier based on a an empty parent
 or seperate classes;
 
 ```scss
-.header-modern {}
-.header-contemporary {}
-}
+.header-isModern {}
+.header-isContemporary {}
 ```
 
 --
+
+### Modifiers
+
+```scss
+.class-isModified {}
+.class.is-modified {}
+.class--Modifier {}
+```
 
 *Explore* a flatter structure, closer to the nature of css.
 
