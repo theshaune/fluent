@@ -267,10 +267,17 @@ or seperate classes;
 ### Modifiers
 
 ```scss
-.class-isModified {}
+.class.isModified {}
 .class.is-modified {}
 .class--Modifier {}
 ```
+
+Concerns to address with modifiers;
+
+- What way is the most natural?
+- Will it work with modifications to Javascript?
+- Does it hae the correct CSS specificity?
+
 
 *Explore* a flatter structure, closer to the nature of css.
 
