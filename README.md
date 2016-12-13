@@ -204,8 +204,9 @@ Explore use of escaped characters such as @ to represent media()
 I have added the current way that i bevlieve is semantic and very easy to understand to the documentation, I am not sure if I have got it completely correct, possily using @-sm, @-md may be better for max-width use cases, this can be closed once this has been explored.
 
 ### Explore the use of brackets.
-*padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*
-- Need more discussion on merit. However It did work well for negative values, also has potential for Media Queries.
+~~*padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*~~
+~~- Need more discussion on merit. However It did work well for negative values, also has potential for Media Queries.~~
+I think this may be over complicating the matter too much, and also encourages non-semantic classes.
 
 
 ### Exlpore the use of descriptive namespacing.
