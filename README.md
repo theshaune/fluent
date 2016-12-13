@@ -209,16 +209,6 @@ I have added the current way that i bevlieve is semantic and very easy to unders
 I think this may be over complicating the matter too much, and also encourages non-semantic classes.
 
 
-### Exlpore the use of descriptive namespacing.
-- should be used to help indicate what the class for.
-- Doesn't apply any styles on it owns.
-- ~~A sugar coated prefix.~~
-- ~~Possibly Captilized?~~
-- ~~example: class="Global Navigation store" .Global.Naviation.store~~
-
-With the remaining 2 reasons left, essentially this class would be something like 'component' but it does nothing aside from tell the developer that it is a componenet, upon futher thoughts, It does seem that it is unnessercary waffle. consider removing.
-
-
 ### Explore the use of indicative + random names.
 
 As the classname is 100% entirely used to identify and apply styles/changes to the markup, and we know that it doesn't make any difference if hte class is "x" or "X". A solution to help identify components could be to use a name that indicates what it is and then a name to identify the styles. This combined with a styleguide could lead to an easy to use library of components. example `.Page-Header.hollywood`
