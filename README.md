@@ -48,7 +48,7 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 </div>
 
 <!-- Semantic Example -->
-<header class="header -large -branded">
+<header class="header is-large is-branded ">
   <div class="header-container">
     <h1 class="header-title"></h1>
     <p class="header-description"></p>
@@ -64,7 +64,7 @@ My preferred framework is SuitCSS, FluentCSS follows a similar naming convention
 ```css
 .parentName
 .parentName-childName
-.parentName-childName.-modifier
+.parentName-childName.is-modified
 .parentName-childName.is-active
 .parentName-childName.has-x
 ```
