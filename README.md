@@ -70,7 +70,7 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 .parentName-childName.has-x
 ```
 
-** Responsive classes**
+**Responsive classes**
 
 ```css
 
