@@ -204,13 +204,9 @@ Explore use of escaped characters such as @ to represent media()
 ~~- This worked well, It was visually easy to identify and quick to learn, consider implementing.~~
 I have added the current way that i bevlieve is semantic and very easy to understand to the documentation, I am not sure if I have got it completely correct, possily using @-sm, @-md may be better for max-width use cases, this can be closed once this has been explored.
 
-### Explore the use of brackets.
-~~*padding(-1), padding(0), padding(1), p(-1), p(0), p(1)*~~
-~~- Need more discussion on merit. However It did work well for negative values, also has potential for Media Queries.~~
-I think this may be over complicating the matter too much, and also encourages non-semantic classes.
-
-
 ### Explore the use of indicative + random names.
+
+**Warning: At first this may seem insane, but hear me out ...**
 
 As the classname is 100% entirely used to identify and apply styles/changes to the markup, and we know that it doesn't make any difference if hte class is "x" or "X". A solution to help identify components could be to use a name that indicates what it is and then a name to identify the styles. This combined with a styleguide could lead to an easy to use library of components. example `.Page-Header.hollywood`
 
