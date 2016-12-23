@@ -182,12 +182,16 @@ This will be the **only** file in the application that does not begin with _.
 @import 'pages/_*';
 ```
 
+## 4. Resets
+
+
 ## TODO
 
-- **Refactor. Simplify. Flatten. Pug it.**
+- Reset guidlines.
+- **Refactor. Simplify. Flatten.**
 - Move grid better place for the grid import. component/structure? @import 'base/04.grid'; is a grid nessercary, hasn't been used at all in the previous 2 projects. 
 - Consider renaming init.scss to fluent.css or index.scss.
-- Implement .wysiwyg class for CMS based inputs.
+- Implement .wysiwyg class/component/mixin for CMS based inputs.
 - Media Query function needs to be implemented.
 - Clean up _variables.scss
 - Create guidlines for reserved classnames. eg.
