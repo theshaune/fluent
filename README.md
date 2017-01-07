@@ -203,10 +203,39 @@ This will be the **only** file in the application that does not begin with _.
 Explore the use of semantic grid names. For example, using `.grid`, `grid-i`, inside of a `.component` can break it up and make it *feel* a little strange. by using selectors that target anything with `-grid` affixed we can keep the semantic classes, keep the css dry and the added benifit of now being able to target specific grid areas semanticaly.
 Although this seems like a nice idea, i believe it would be difficult to get across to an entire team and i belive it may be difficult to keep consistent, almost too abstract an relies on a strong knowledge of advanced css selectors. But it definitely worth exploring the potential for this.
 
+### Media Queries
+
 Explore use of escaped characters such as @ to represent media()
 ~~*class="12of12 | @sm-6of12 | @md-4of12"*~~
 ~~- This worked well, It was visually easy to identify and quick to learn, consider implementing.~~
-I have added the current way that i bevlieve is semantic and very easy to understand to the documentation, I am not sure if I have got it completely correct, possily using @-sm, @-md may be better for max-width use cases, this can be closed once this has been explored.
+~~I have added the current way that i believe is semantic and very easy to understand to the documentation, I am not sure if I have got it completely correct, possily using @-sm, @-md may be better for max-width use cases, this can be closed once this has been explored.~~
+
+... thinking.
+
+- `@media(small)`
+- `@media(medium)`
+- `@media(large)`
+
+- `@media-from(small)`
+- `@media-from(medium)`
+- `@media-from(large)`
+
+- `@media-until(small)`
+- `@media-until(medium)`
+- `@media-until(large)`
+
+- `@(small)`
+- `@(medium)`
+- `@(large)`
+
+- `@from(small)`
+- `@from(medium)`
+- `@from(large)`
+
+- `@until(small)`
+- `@until(medium)`
+- `@until(large)`
+
 
 ### Explore the use of indicative + random names.
 
