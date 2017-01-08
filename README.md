@@ -42,10 +42,10 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 ```html
 <!-- Working on a naming convention for modifiers, whether -large, or is-large prefixed. more discussion is required. -->
 <div class="parentName | grid">
-  <div class="parentName-childName is-modifierOne | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
-  <div class="parentName-childName is-modifierOne | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
-  <div class="parentName-childName is-modifierOne | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
-  <div class="parentName-childName is-modifierOne | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="parentName-childName -modifier is-eventModifier has-eventModifier | grid-item 4of4 2of4@sm-lg 1of4@lg+"></div>
+  <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
 </div>
 
 <!-- Semantic Example -->
