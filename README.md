@@ -212,10 +212,14 @@ Explore use of escaped characters such as @ to represent media()
 
 ... thinking.
 
-- className@small
-- @small--className
-- @small(className)
-- @from-small(className)
+- `className@small`
+- `className@small+`
+- `className@small-large`
+- `className@small-`
+
+- `@small--className`
+- `@small(className)`
+- `@from-small(className)`
 
 - `@media(small)`
 - `@media(medium)`
