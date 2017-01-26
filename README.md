@@ -70,6 +70,7 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 .parentName-childName.has-x
 
 body.has-open-parentName
+body.parentName--is-open
 ```
 
 **Responsive classes**
