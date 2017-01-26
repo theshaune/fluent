@@ -68,6 +68,8 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 .parentName-childName.is-modified
 .parentName-childName.is-active
 .parentName-childName.has-x
+
+body.has-open-parentName
 ```
 
 **Responsive classes**
