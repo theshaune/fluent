@@ -249,6 +249,17 @@ Explore use of escaped characters such as @ to represent media()
 - `@until(large)`
 
 
+### Explore naming conventions for types of UI objects
+
+- elements
+  - buttons
+  - form inputs
+- components
+  - cards
+  - navbar
+- compositions/ui/layout
+  - grids
+
 ### Explore the use of indicative + random names.
 
 **Warning: At first this may seem insane, but hear me out ...**
