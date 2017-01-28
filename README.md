@@ -19,15 +19,15 @@ There are far too many to list. I have used, played with, studied, loved, hated 
 
 My preferred framework is SuitCSS, FluentCSS follows a naming convention similar to [Bulma](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) with the exception of modifer classes, responsive classes, utility classes and the addition of pipes in the markup to seperate classes.
 
-* [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
-* [Bulma](http://bulma.io/)
 * [BEM](https://en.bem.info/method/)
 * [Bootstrap](http://getbootstrap.com)
+* [Bulma](http://bulma.io/)
 * [Foundation](http://http://foundation.zurb.com)
-* [ITCSS](http://itcss.io/)
 * [InuitCSS](https://github.com/inuitcss/)
+* [ITCSS](http://itcss.io/)
 * [Pure](http://purecss.io/)
 * [Semantic-ui](http://semantic-ui.com)
+* [SuitCSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 
 #### Reading Material
 
@@ -42,7 +42,7 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 ```html
 <!-- Working on a naming convention for modifiers, whether -large, or is-large prefixed. more discussion is required. -->
 <div class="parentName | grid">
-  <div class="parentName-childName --modifer -modifier is-eventModifier has-eventModifier | grid-item 4of4 2of4@sm-lg 1of4@lg+"></div>
+  <div class="parentName-childName -modifier is-eventModifier has-eventModifier | grid-item 4of4 2of4@sm-lg 1of4@lg+"></div>
   <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
   <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
   <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
