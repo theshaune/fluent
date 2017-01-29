@@ -9,17 +9,21 @@ The standard commonly used button.
 
 ### Basic usage
 
+::: demo one
 ```html
 <button {{states}} class="button {{variations}}">Default Button</button>
 ```
+:::
 
 ### Variations
 
+::: demo Two
 ```html
 <button class="button">Default Button</button>
 <button class="button -primary">Primary Button</button>
 <button class="button -secondary">Secondary Button</button>
 ```
+:::
 
 ### States
 
