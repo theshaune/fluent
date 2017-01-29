@@ -123,12 +123,12 @@ body.parentName--is-open
 ```
 
 ## 2. Folder Structure
-*Note: Consider prefixing files that rely on a specific inheritance order as this may help force the developer to consider what order the files will be imported in.*
+*Note: Consider prefixing folders & files that rely on a specific inheritance order as this may help force the developer to consider what order the files will be imported in.*
 
 <pre>
 .
 ├── init.scss
-├── base
+├── 01-base
 │   ├── functions
 │       ├── _*.scss
 │   ├── mixins
@@ -139,13 +139,13 @@ body.parentName--is-open
 │   ├── _04.grid.scss
 │   ├── _05.normalize.scss
 │   ├── _06.global-elements.scss
-├── external-libraries
+├── 02-external-libraries
 │   ├── _*.scss
-├── components
+├── 03-elements
 │   ├── _*.scss
-├── utilities
+├── 04-components
 │   ├── _*.scss
-├── pages
+├── 05-compositions
 │   ├── _*.scss
 </pre>
 

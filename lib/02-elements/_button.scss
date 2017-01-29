@@ -1,4 +1,6 @@
 .button {
-  &-primary {}
-  &-secondary {}
+  &:hover {}
+  &:focus {}
+  &.-primary {}
+  &.-secondary {}
 }

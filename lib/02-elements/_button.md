@@ -17,7 +17,7 @@ The standard commonly used button.
 
 ### Variations
 
-::: demo Two
+::: demo There are 3 main button types.
 ```html
 <button class="button">Default Button</button>
 <button class="button -primary">Primary Button</button>
@@ -27,7 +27,7 @@ The standard commonly used button.
 
 ### States
 
-```html
+```html Use `disabled` attribute to determine whether a button is disabled. It accepts a `Boolean` value.
 <button disabled class="button">Default Button</button>
 <button disabled class="button -primary">Primary Button</button>
 <button disabled class="button -secondary">Secondary Button</button>
