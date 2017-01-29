@@ -260,9 +260,20 @@ Explore use of escaped characters such as @ to represent media()
 - compositions/ui/layout
   - grids
 
+
+**Elements**
+*noun*
+
+1. a component or constituent of a whole or one of the parts into which a whole may be resolved by analysis:
+
+**Components**
+*noun*
+1. a constituent part; element; ingredient.
+
 **composition**
 *noun*
 1. The act of combining parts or elements to form a whole.
+
 
 ### Explore the use of indicative + random names.
 
