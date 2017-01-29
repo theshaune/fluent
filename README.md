@@ -260,6 +260,10 @@ Explore use of escaped characters such as @ to represent media()
 - compositions/ui/layout
   - grids
 
+**composition**
+*noun*
+1. The act of combining parts or elements to form a whole.
+
 ### Explore the use of indicative + random names.
 
 **Warning: At first this may seem insane, but hear me out ...**
