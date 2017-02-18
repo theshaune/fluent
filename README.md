@@ -335,4 +335,4 @@ Concerns to address with modifiers;
 
 - What way is the most natural?
 - Will it work with modifications to Javascript?
-- Does it hae the correct CSS specificity?
+- Does it have the correct CSS specificity?
