@@ -297,7 +297,7 @@ Although this is a scenerio where it is unlikely to happen unless we have a larg
 - abstract
 - illustrative
 
-**Or even as generic as;**
+**Or even as generic as;*
 
 - brooklyn
 - nyc
@@ -322,17 +322,3 @@ or seperate classes;
 ```
 
 --
-
-### Modifiers
-
-```scss
-.class.isModified {}
-.class.is-modified {}
-.class--Modifier {}
-```
-
-Concerns to address with modifiers;
-
-- What way is the most natural?
-- Will it work with modifications to Javascript?
-- Does it have the correct CSS specificity?
