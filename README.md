@@ -126,8 +126,8 @@ body.componentName--is-open
 
 <pre>
 .
-├── init.scss
-├── 01-base
+├── index.scss
+├── core
 │   ├── functions
 │       ├── _*.scss
 │   ├── mixins
@@ -135,23 +135,17 @@ body.componentName--is-open
 │   ├── _01.variables.scss
 │   ├── _02.functions.scss
 │   ├── _03.mixins.scss
-│   ├── _04.grid.scss
-│   ├── _05.normalize.scss
-│   ├── _06.global-elements.scss
-├── 02-external-libraries
-│   ├── _*.scss
-├── 03-elements
-│   ├── _*.scss
-├── 04-components
-│   ├── _*.scss
-├── 05-compositions
+│   ├── _04.normalize.scss
+│   ├── _05.typography.scss
+├── components
+│   ├── _grid.scss
 │   ├── _*.scss
 </pre>
 
 
-## 3. init.scss
+## 3. index.scss
 
-Located in the root directory this file importas all of our `_.scss` files. 
+Located in the root directory this file imports all of our `_.scss` files. 
 The files must be imported in the correct order to maintain the correct inheritance of styles.
 This will be the **only** file in the application that does not begin with _.
 
