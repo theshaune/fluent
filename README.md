@@ -40,21 +40,21 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 #### HTML
 
 ```html
-<!-- Working on a naming convention for modifiers, whether -large, or is-large prefixed. more discussion is required. -->
-<div class="parentName | grid">
-  <div class="parentName-childName -modifier is-eventModifier has-eventModifier | grid-item 4of4 2of4@sm-lg 1of4@lg+"></div>
-  <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
-  <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
-  <div class="parentName-childName | grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+<!-- Component -->
+<div class="parentName">
+  <div class="parentName-childName is-modified has-eventModifier"></div>
+  <div class="parentName-childName"></div>
+  <div class="parentName-childName"></div>
+  <div class="parentName-childName"></div>
 </div>
 
-<!-- Semantic Example -->
-<header class="header is-large is-branded ">
-  <div class="header-container">
-    <h1 class="header-title"></h1>
-    <p class="header-description"></p>
-  </div>
-</header>
+<!-- Grid -->
+<div class="grid">
+  <div class="grid-item 4of4 2of4@sm-lg 1of4@lg+"></div>
+  <div class="grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+</div>
 ```
 
 
@@ -69,8 +69,7 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 .parentName-childName.is-active
 .parentName-childName.has-x
 
-body.has-open-parentName
-body.parentName--is-open
+body.componentName--is-open
 ```
 
 **Responsive classes**
