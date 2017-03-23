@@ -204,45 +204,13 @@ Although this seems like a nice idea, i believe it would be difficult to get acr
 ### Media Queries
 
 Explore use of escaped characters such as @ to represent media()
-~~*class="12of12 | @sm-6of12 | @md-4of12"*~~
-~~- This worked well, It was visually easy to identify and quick to learn, consider implementing.~~
-~~I have added the current way that i believe is semantic and very easy to understand to the documentation, I am not sure if I have got it completely correct, possily using @-sm, @-md may be better for max-width use cases, this can be closed once this has been explored.~~
-
-... thinking.
 
 - `className@small`
 - `className@small+`
-- `className@small-large`
 - `className@small-`
-
-- `@small--className`
-- `@small(className)`
-- `@from-small(className)`
-
-- `@media(small)`
-- `@media(medium)`
-- `@media(large)`
-
-- `@media-from(small)`
-- `@media-from(medium)`
-- `@media-from(large)`
-
-- `@media-until(small)`
-- `@media-until(medium)`
-- `@media-until(large)`
-
-- `@(small)`
-- `@(medium)`
-- `@(large)`
-
-- `@from(small)`
-- `@from(medium)`
-- `@from(large)`
-
-- `@until(small)`
-- `@until(medium)`
-- `@until(large)`
-
+- `className@small-large`
+- `className@fromSmall`
+- `className@UntilSmall`
 
 ### Explore naming conventions for types of UI objects
 
