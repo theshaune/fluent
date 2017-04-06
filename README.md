@@ -42,7 +42,7 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 ```html
 <!-- Component -->
 <div class="parentName">
-  <div class="parentName-childName is-modified has-eventModifier"></div>
+  <div class="parentName-childName isModified hasEventModifier"></div>
   <div class="parentName-childName"></div>
   <div class="parentName-childName"></div>
   <div class="parentName-childName"></div>
@@ -65,11 +65,10 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 ```css
 .parentName
 .parentName-childName
-.parentName-childName.is-modified
-.parentName-childName.is-active
-.parentName-childName.has-x
+.parentName-childName.isModified
+.parentName-childName.hasActivity
 
-body.componentName--is-open
+body.componentName--isOpen
 ```
 
 **Responsive classes**
