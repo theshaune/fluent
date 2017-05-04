@@ -8,7 +8,7 @@
 ## Introduction
 FluentCSS is a methodology to help write CSS smoothly, gracefuly and effortless. This is a result of [my](http://twitter.com/shaunewest) experience with CSS. This repo is essentially a notepad of thoughts, tests and ideas.
 
-I hope this repository will generate discussion, exploration and ideas on how to create a consistent **unified** approach to CSS development. ***The Best CSS framework is one that works for the entire team, not just the indivual.***
+I hope this repository will generate discussion, exploration and ideas on how to create a consistent **unified** approach to CSS development. ***The Best CSS framework is one that works for the entire team, not just the individual.***
 
 
 ### Noteworthy frameworks & Reading Material
