@@ -180,6 +180,7 @@ This will be the **only** file in the application that does not begin with _.
 
 ## 4. Resets
 
+Section coming soon ... maybe 😅
 
 ## TODO
 
@@ -193,13 +194,6 @@ This will be the **only** file in the application that does not begin with _.
 - Create guidlines for reserved classnames. eg.
   - .header, .body, .footer, .page-x, .content-x, .container, .wrapper, .contents
 - Provide more of a description on how to abstract names for better modularity, eg. brand-logo is better than apple-logo in terms of allowing the file to be re-used in future projects.
-
-## Thoughts
-
-Simple Natural & Intuitive
-
-Explore the use of semantic grid names. For example, using `.grid`, `grid-i`, inside of a `.component` can break it up and make it *feel* a little strange. by using selectors that target anything with `-grid` affixed we can keep the semantic classes, keep the css dry and the added benifit of now being able to target specific grid areas semanticaly.
-Although this seems like a nice idea, i believe it would be difficult to get across to an entire team and i belive it may be difficult to keep consistent, almost too abstract an relies on a strong knowledge of advanced css selectors. But it definitely worth exploring the potential for this.
 
 ### Media Queries
 
@@ -236,3 +230,11 @@ Explore use of escaped characters such as @ to represent media()
 **composition**
 *noun*
 1. The act of combining parts or elements to form a whole.
+
+## Thoughts
+
+This repo was created as a way to help get my thoughts out onto paper and to explain my process when meeting developers/sharing ideas.
+
+I've since spent more time in react and less time in css, therefore it hasn't got the love it once did.
+
+In time I may explore it again, and hopefuly end up with a Simple, Natural & Intuitive Guideline.
