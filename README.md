@@ -43,7 +43,7 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 ```html
 <!-- Component -->
 <div class="parentName">
-  <div class="parentName-childName isModified hasEventModifier"></div>
+  <div class="parentName-childName repsonive@lg isModified hasEventModifier"></div>
   <div class="parentName-childName"></div>
   <div class="parentName-childName"></div>
   <div class="parentName-childName"></div>
@@ -51,10 +51,8 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 
 <!-- Grid -->
 <div class="grid">
-  <div class="grid-item 4of4 2of4@sm-lg 1of4@lg+"></div>
-  <div class="grid-item 4of4 2of4@sm+ 1of4@md+"></div>
-  <div class="grid-item 4of4 2of4@sm+ 1of4@md+"></div>
-  <div class="grid-item 4of4 2of4@sm+ 1of4@md+"></div>
+  <div class="grid-item 12of12 6of12@sm 3of12@md"></div>
+  <div class="grid-item 12of12 6of12@sm 3of12@md"></div>
 </div>
 ```
 
@@ -66,6 +64,7 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 ```css
 .parentName
 .parentName-childName
+.parentName-childName.class@breakpoint
 .parentName-childName.isModified
 .parentName-childName.hasActivity
 
@@ -74,36 +73,19 @@ body.componentName--isOpen
 
 **Responsive classes**
 
+We can make us of the `@` symbol to denote any class that is a media query. This visual indication allows devlopers to quickly and confidently identify which breakpoints the class effect. It naturally provides a clean way to write the class, with the syntax of `.className@breakpoint`. Which literally translates to className at breakpoint.
+
+When we write these classes in css we must escape the ampersand character as shown below.
+
 ```css
-
-@media screen and (max-width: $sm) {
-  .class\@sm- {}
-}
-@media screen and (max-width: $md) {
-  .class\@md- {}
-}
-@media screen and (max-width: $lg){ 
-  .class\@lg- {}
-}
-
 @media screen and (min-width: $sm) {
-  .class\@sm+ {}
+  .class\@sm {}
 }
 @media screen and (min-width: $md) {
-  .class\@md+ {}
+  .class\@md {}
 }
 @media screen and (min-width: $lg){ 
-  .class\@lg+ {}
-}
-
-@media screen and (min-width: $sm) and (max-width: $md){ 
-  .class\@sm-md {}
-}
-@media screen and (min-width: $sm) and (max-width: $lg){ 
-  .class\@sm-lg {}
-}
-@media screen and (min-width: $md) and (max-width: $lg){ 
-  .class\@md-lg {}
+  .class\@lg {}
 }
 ```
 
@@ -194,17 +176,6 @@ Section coming soon ... maybe 😅
 - Create guidlines for reserved classnames. eg.
   - .header, .body, .footer, .page-x, .content-x, .container, .wrapper, .contents
 - Provide more of a description on how to abstract names for better modularity, eg. brand-logo is better than apple-logo in terms of allowing the file to be re-used in future projects.
-
-### Media Queries
-
-Explore use of escaped characters such as @ to represent media()
-
-- `className@small`
-- `className@small+`
-- `className@small-`
-- `className@small-large`
-- `className@fromSmall`
-- `className@UntilSmall`
 
 ### Explore naming conventions for types of UI objects
 
