@@ -71,6 +71,29 @@ My preferred framework is SuitCSS, FluentCSS follows a naming convention similar
 body.componentName--isOpen
 ```
 
+As much as we love a beautifully magical complex stylus/sass nest/mixin/function, the Sass Snake is less than desirable. 
+For readability, consider explicit selectors, instead of nesting.
+
+```css
+.parentName {
+  ul { }
+  ul li { }
+  ul li a { 
+    &:hover { }
+  }
+}
+
+.parentName {
+  ul { 
+    li { 
+      a { 
+        &:hover { }
+      }
+    }
+  }
+}
+```
+
 **Responsive classes**
 
 We can make us of the `@` symbol to denote any class that is a media query. This visual indication allows devlopers to quickly and confidently identify which breakpoints the class effect. It naturally provides a clean way to write the class, with the syntax of `.className@breakpoint`. Which literally translates to className at breakpoint.
